@@ -12,30 +12,23 @@
 
 def best_time(prices)
   diffs = [0]
+  min_so_far = prices[0]
 
   i = 1
   while i < prices.length
-    j = 0
-    max_diff = nil
-    while j < i
-      if prices[i] > prices[j]
-        if max_diff.nil? || (prices[i] - prices[j]) > max_diff
-          max_diff = prices[i] - prices[j]
-        end
-      end
-      j += 1
-    end
-
-    if max_diff.nil?
+    if prices[i] < min_so_far
+      min_so_far = prices[i]
       diffs << 0
     else
-      diffs << max_diff
+      diffs << (prices[i] - min_so_far)
     end
-
     i += 1
   end
 
   diffs.max
 end
 
+# O(n)
+
 puts best_time([7, 1, 5, 3, 6, 4])
+puts best_time([10, 7, 5, 8, 11, 9])

@@ -56,3 +56,4 @@ def compute_nearest_left(sites)
 end
 
 puts billboards([6, 7, 12, 14], [5, 6, 5, 1])
+puts billboards([6], [5])
