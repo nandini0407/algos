@@ -6,6 +6,7 @@
 # Solution : Use Dynamic Programming.
 
 def longest_palin_substring(str)
+  return 0 if str == ""
   longest_palins = [1]
 
   if str[1] == str[0]
@@ -30,7 +31,11 @@ def longest_palin_substring(str)
   longest_palins.max
 end
 
+# O(n)
+
 puts longest_palin_substring("forgeeksskeegfor")
 puts longest_palin_substring("dcabace")
 puts longest_palin_substring("dabbac")
 puts longest_palin_substring("dabbacabace")
+puts longest_palin_substring("a")
+puts longest_palin_substring("")
