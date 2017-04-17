@@ -11,6 +11,7 @@
 # sub_sum([0], 0) = true
 # sub_sum([0], j) = false for j > 0
 # sub_sum(arr, 0) = true for any value in the array which is > 0
+# Use a table to save the truth values at each subset at each given sum.
 # Bottom-up logic will be => cell[i][j] = true if cell[i - 1][j] == true, else cell[i][j] = cell[i - 1][j] || cell[i - 1][j - arr[i]]
 
 def sub_sum(arr, target)

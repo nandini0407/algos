@@ -12,6 +12,7 @@
 # D(s1, s2) = D(s1[0..-2], s2[0..-2]) if the last letters are same
 # We consider the minimum of the three cases since we want to look for the minimum number of edits
 # Base case : D(s1, "") = s1.length, D("", s2) = s2.length
+# Use a table to save result for each pair of letters.
 # Bottom-up approach to build the table :
 # Build the base cases by considering empty string as the first row and first column
 # For any cell[i][j], consider the top, left and top-left cells. If the letters match, cell[i][j] = top-left cell,

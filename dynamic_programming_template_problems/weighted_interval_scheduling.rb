@@ -8,6 +8,7 @@
 # a) inculde j or b) not include j. If it includes j, F(j) = value(j) + F(leftmost(j)). If it does not include j, then F(j) = F(j - 1)
 # The recurrence relation is : F(j) = max((value(j) + F(leftmost(j))), F(j - 1))
 # Base case : F(0) = 0, where 0th index has an interval [0, 0] and a value of 0
+# Use an array to save the maximum value at each interval.
 # Bottom-up logic will be : sum[j] = max((value(j) + sum[leftmost[j]]), sum[j - 1])
 
 def weighted_intervals(intervals, values)

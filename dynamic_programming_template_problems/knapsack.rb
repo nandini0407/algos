@@ -14,6 +14,7 @@
 # Base cases :
 # F(i, 0) = 0
 # F(0, j) = 0
+# Use a table to save the maximum value for each item at each capacity.
 # Bottom-up recurrence is similar -
 # cell[i][j] = max((vi + cell[i - 1][j - wi]), cell[i - 1][j]) if j - wi >= 0
 # cell[i][j] = cell[i - 1][j] if j - wi < 0
