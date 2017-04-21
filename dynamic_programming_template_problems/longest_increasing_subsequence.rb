@@ -26,21 +26,15 @@ def longest_increasing_subseq(arr)
   i = 1
   while i < arr.length
     j = 0
-    max_length_for_i = nil
+    temp = 0
     while j < i
       if arr[i] > arr[j]
-        if max_length_for_i.nil? || longest_subseq_length[j] > max_length_for_i
-          max_length_for_i = longest_subseq_length[j]
-        end
+        temp = [temp, longest_subseq_length[j]].max
       end
       j += 1
     end
 
-    if max_length_for_i.nil?
-      longest_subseq_length << 1
-    else
-      longest_subseq_length << (max_length_for_i + 1)
-    end
+    longest_subseq_length << (temp + 1)
     i += 1
   end
 
