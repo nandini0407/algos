@@ -5,13 +5,13 @@
 # String ="thisisadog", Output : false
 #
 # Solution : Let F(n) be the true if including the nth character outputs true, false if including the nth character outputs false.
-# To compute F(n), we will need to
+# To compute F(n), we will need to 
 
 def word_breaking(word, dict)
   result = []
   i = 0
   while i < word.length
-    
+
     i += 1
   end
 end
