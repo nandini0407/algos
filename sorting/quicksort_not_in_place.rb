@@ -1,3 +1,11 @@
+# Quicksort : This is also a divide-and-conquer technique for sorting. Here
+# we choose a pivot element, generally the first element. We partititon the
+# array into two subarrays - one which has all elements less than the pivot,
+# the other which has all elements greater than or equal to the pivot. The
+# subarrays are recursively quicksorted and in the we return the sum of the
+# subarray with elements < pivot, the pivot itself and the aubarray with
+# elements > pivot.
+
 
 def quicksort(arr)
   if arr.length <= 1
