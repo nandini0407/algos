@@ -1,3 +1,10 @@
+# Binary Search : This technique searches a sorted array for a given target
+# element. It compares the target with the array's midpoint, if the target
+# than the midpoint, it only searches in the left half of the array. If
+# target > midpoint, it only searches the right half. It eliminates half
+# the array in each iteration. If the target is equal to midpoint, it returns
+# that index. If the target is not present in the array, it returns -1.
+# Time complexity : O(logn)
 
 def bsearch(arr, target)
   i = 0
