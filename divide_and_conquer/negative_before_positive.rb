@@ -1,4 +1,4 @@
-# Desogn an algorithm to rearrange elements of a given array of n real
+# Design an algorithm to rearrange elements of a given array of n real
 # numbers so that all its negative elements precede all its positive elements.
 # Your algorithm should be both time efficient and space efficient.
 #
